@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC ″-//w3c//DTD XHTML 1.1//EN″ “http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd”>
+<html xmlns = ″http://www.w3.org/1999/xhtml″>
+
+<head>
+    <title> El Bet Baytak | Rent A Room</title>
+    <link rel="stylesheet" type="text/css" href="styleSheet.css"/>
+   
+    <script type="text/javascript">
+
+        function highlight(){
+            x = document.getElementById("high").style;
+            x.border = "2px dashed red";
+            x.marginBottom = "0";
+            x.float = "left";
+            
+        }
+    
+        function undoHighlight(){
+            x = document.getElementById("high").style;
+            x.borderStyle = "none";
+        }
+        function changeLoc(x){
+        if(x == "1"){
+            location.href =  "login.php";
+        }else if (x == "2"){
+            location.href =  "form.php";
+        }
+
+    }
+        </script>
+</head>
+<body class="page3">
+    <div class="bbar"> 
+        <header>
+            <p class="tit"> El Bet Baytak </p>
+            <ul class="bar"> 
+                <li><a href="page1.html"> Home</a></li>
+                <li><a href="#bottom" onclick="highlight(), setTimeout(undoHighlight, 3000);"> Contact Us</a></li>
+                <li><a href="#"> Account</a>
+                    <div class="con">
+                        <ul class="bar"> <li id="loc1" onclick="changeLoc(1);"> Login</li>
+                            <li id="loc1" onclick="changeLoc(2);"> SignUp</li>
+                        </ul>
+                </div>
+            </li>
+             </ul>
+        
+        </header>
+</div>
+    <div class="div1"> 
+        <form action=" ">
+
+        <p class="tit2"> <span class="filter"> Filters:</span> Location <select name="gov">
+            <option value="first"> Whole Country </option>
+            <option value="1"> Beirut</option>
+            <option value="2"> Mount Lebanon </option>
+            <option value="3"> Akkar </option>
+            <option value="4"> Nabbatieh </option>
+            <option value="5"> North </option>
+            <option value="6"> South </option>
+            <option value="7"> Bekaa </option>
+            <option value="8"> Baalbek-Hermel </option>
+        </select>
+    Price <select name="fil">
+        <option value="first"> All </option>
+        <option value="1"> $0 - $10</option>
+        <option value="2"> $10 - $20 </option>
+        <option value="3"> $20 - $30 </option>
+        <option value="4"> $30+ </option>
+    </select>
+    Sort <select name="fisortl">
+        <option value="first"> None </option>
+        <option value="1"> Alphabetical </option>
+        <option value="2"> Most Recent </option>
+        <option value="3"> Price Low to High </option>
+        <option value="4"> Price High to Low  </option>
+    </select>
+
+    <input type="Submit" value="Search" class="search"/>
+</p>
+
+<br/>
+<h1 class="filter"> Rooms Available</h1>
+<br/>
+
+<div class="room1">
+    <img src="r11.jpeg" alt="A Room" style="width:300px; height: 200px; float:left; padding: 10px;">
+    <p class="info">A Room with a beautiful view.</p>
+    <p class="minorInfo">-------</p>
+    <p class="minorInfo">Saida, South</p>
+    <p class="minorInfo">Price per day: $30</p>
+    <p class="minorInfo">Bed(s) Available: 22</p>
+    <p class="minorInfo">More details: <br/> WIFI  ⚬ No smoking ⚬
+        Air Conditioning ⚬ Private Bathroom </p>
+        <br/><br/><br/><br/><br/><br/>
+    <p class="owner">Owner Contact Info: Mhmd Chatila - 81790715</p>
+
+</div>
+
+<div class="room1">
+    <img src="r22.jpeg" alt="A Room" style="width:300px; height: 200px; float:left; padding: 10px;">
+    <p class="info">A Room in Sour on the beach.</p>
+    <p class="minorInfo">-------</p>
+    <p class="minorInfo">Sour, South</p>
+    <p class="minorInfo">Price per week: $50</p>
+    <p class="minorInfo">Bed(s) Available: 1</p>
+    <p class="minorInfo">More details: <br/> WIFI ⚬ Guests Allowed ⚬ Elevator
+        ⚬ Air Conditioning ⚬ Private Bathroom </p>
+        <br/><br/><br/><br/><br/>
+        <p class="owner">Owner Contact Info: Hasan Hyjazi - 81653758</p>
+
+
+</div>
+<div class="room1">
+    <img src="r3.jpeg" alt="A Room" style="width:300px; height: 200px; float:left; padding: 10px;">
+    <p class="info">A Room in Beirut with a view.</p>
+    <p class="minorInfo">-------</p>
+    <p class="minorInfo">Bshamoun, Beirut</p>
+    <p class="minorInfo">Price per month: $100</p>
+    <p class="minorInfo">Bed(s) Available: 1</p>
+    <p class="minorInfo">More details: <br/> WIFI ⚬ Kitchen ⚬ No smoking ⚬ Elevator ⚬
+        Air Conditioning ⚬ Heating </p>
+<br/><br/><br/><br/><br/>
+    <p class="owner" >Owner Contact Info: Salwa Hammoud - 76378315</p>
+
+</div>
+
+<div class="room1">
+    <img src="r4.jpeg" alt="A Room" style="width:300px; height: 200px; float:left; padding: 10px;">
+    <p class="info">A room as lovely as its owner. ♡ </p>
+    <p class="minorInfo">-------</p>
+    <p class="minorInfo">Tripoli, North</p>
+    <p class="minorInfo">Price per day: $10</p>
+    <p class="minorInfo">Beds Available: 2</p>
+    <p class="minorInfo">More details: <br/> WIFI ⚬ No pets allowed ⚬ TV ⚬ Air Conditioning ⚬ Private Bathroom </p>
+    <br/><br/><br/><br/><br/>
+    <p class="owner">Owner Contact Info: Layal Abu Daher - 0000000</p>
+
+</div>
+
+<div class="room1">
+    <img src="r5.jpeg" alt="A Room" style="width:300px; height: 200px; float:left; padding: 10px;">
+    <p class="info">Master bedroom in the heart of beirut. </p>
+    <p class="minorInfo">-------</p>
+    <p class="minorInfo">Beirut, Beirut</p>
+    <p class="minorInfo">Price per day: $25</p>
+    <p class="minorInfo">Beds Available: 1</p>
+    <p class="minorInfo">More details: <br/> WIFI ⚬ Kitchen ⚬ No smoking ⚬ No pets allowed ⚬
+        Parking Availability </p>
+        <br/><br/><br/><br/>
+    <p class="owner">Owner Contact Info: Salwa Hammoud - 81790715</p>
+
+</div>
+
+<div class="room1">
+    <img src="r6.jpeg" alt="A Room" style="width:300px; height: 200px; float:left; padding: 10px;">
+    <p class="info">A Room in the heart of Beirut with a beautiful view.</p>
+    <p class="minorInfo">-------</p>
+    <p class="minorInfo">Faraya, North</p>
+    <p class="minorInfo">Price per week: $120</p>
+    <p class="minorInfo">Beds Available: 3</p>
+    <p class="minorInfo">More details: <br/> WIFI ⚬ Kitchen ⚬ Heating ⚬ Private Bathroom </p>
+    <br/><br/><br/><br/><br/>
+    <p class="owner">Owner Contact Info: Mhmd Chatila - 76378315</p>
+
+</div>
+
+</form>
+    </div>
+
+<div class="fixedNav">
+    <div id="high">
+    <a href="https://www.facebook.com/elbet.baytak/" class="socials" target="_blank">
+        <img src="facebook.png" style="width:30px; height:30px;"/>
+    </a>
+    <a href="https://www.instagram.com/elbet_baytak/" class="socials" target="_blank">
+        <img src="instagram.png" style="width:30px; height:30px;"/>
+    </a>
+    <a href="https://twitter.com/ElBaytak" class="socials" target="_blank">
+        <img src="twitter.png" style="width:40px; height:35px;"/>
+    </a>
+</div>
+    <div class="bottomNav" style="height:30px;" id="bottom">
+    
+    El Bet Baytak 2021&trade; &emsp;&emsp;&emsp;
+    <a href="privacy.html" class="open">Privacy Policy</a> &emsp;&emsp;&emsp;
+    <a href="terms.html" class="open">Terms &amp; Conditions</a> 
+
+
+    <a href="#" class="extra">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;height:13px;width:13px;fill:currentColor" aria-hidden="true" role="presentation" focusable="false"><path d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 
+        7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 
+        7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 
+        8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 
+        1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 
+        3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 
+        6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 
+        1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z" /></svg>English(US)</a>
+    <a href="#" class="extra">$USD</a>
+
+</div>
+</div>
+</body>
+</html>
